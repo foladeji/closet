@@ -102,7 +102,7 @@ class App {
         console.log(this.camera.position)
 
         this.dolly = new THREE.Object3D();
-        this.dolly.position.set(4,3,-12);
+        this.dolly.position.set(4,3.5,-12);
         this.dolly.add(this.camera);
         this.dummyCam = new THREE.Object3D();
         this.camera.add(this.dummyCam);
@@ -651,10 +651,10 @@ this.setupXR();
     
     initScene(){
         // this.room = new THREE.LineSegments(
-		// 			new BoxLineGeometry( 6, 6, 6, 6, 6, 6 ),
-		// 			new THREE.LineBasicMaterial( { color: 0x808080 } )
+		// 			new BoxLineGeometry( 0, 0, 0, 0, 0, 0 ),
+		// 			new THREE.LineBasicMaterial( { color: 0x00FF00 } )
 		// 		);
-        // this.room.geometry.translate( 0, 3, 0 );
+        // this.room.geometry.translate(2,3.5,-12);
         // this.scene.add( this.room );
         
         this.createUI();
